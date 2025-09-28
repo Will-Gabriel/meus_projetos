@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-bg: #111111;
+    --secondary-bg: #252525;
+    --accent-color: #fff;
+    --yellow-accent: #b60e43;
+    --card-bg: #ffffff;
+    --border-radius: 12px;
+    --transition: all 0.3s ease;
+    --shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    /* background-color: var(--primary-bg); */
+    color: var(--accent-color);
+    line-height: 1.6;
+    min-height: 100vh;
+    background-image: url("/PageWeb/app/templates/img/backgound.svg");
+    background-size: cover;  /* ajusta a imagem para cobrir toda a tela */
+    background-repeat: no-repeat; /* impede que a imagem se repita */
+    background-position: center center; /* centraliza a imagem */
+}
+
+header {
+    width: 100%;
+    /* background-color: var(--primary-bg); */
+    padding: 20px 0;
+}   
+
+#header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 40px;
+    min-height: 80px;
+}
+
+#main-navigation {
+    flex: 0 0 auto;
+}
+
+#navigation-links {
+    display: flex;
+    background-color: var(--secondary-bg);
+    border-radius: var(--border-radius);
+    list-style: none;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.navigation-item a {
+    display: block;
+    padding: 15px 30px;
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: var(--transition);
+    border-right: 1px solid var(--primary-bg);
+}
+
+.navigation-item:last-child a {
+    border-right: none;
+}
+
+.navigation-item a:hover {
+    background-color: var(--primary-bg);
+    color: var(--yellow-accent);
+}
+
+#site-logo {
+    flex: 1;
+    text-align: center;
+    font-size: clamp(26px, 4vw, 32px);
+    font-weight: 400;
+}
+
+#site-logo span {
+    /* color: var(--yellow-accent); */
+    font-weight: 700;
+}
+
+#user-name {
+    flex: 0 0 auto;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#user-name span {
+    font-weight: 600;
+}
+
+main {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+#information-sections {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.section-card {
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.section-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.section-title {
+    background-color: var(--secondary-bg);
+    color: var(--accent-color);
+    padding: 15px 5px;
+    margin: 5px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.card-group {
+    padding: 40px 20px;
+    text-align: center;
+    color: var(--secondary-bg);
+    font-size: clamp(32px, 5vw, 48px);
+    font-weight: 600;
+}
+
+#geral-information {
+    width: 100%;
+}
+
+#section-table {
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: 5px;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+#table-information {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 8px;
+}
+
+#table-information thead th {
+    background-color: var(--secondary-bg);
+    color: var(--accent-color);
+    padding: 20px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+#table-information tbody td {
+    background-color: var(--secondary-bg);
+    color: var(--accent-color);
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+/* Responsividade para tablets */
+@media (max-width: 1200px) {
+    main {
+        padding: 30px 20px;
+    }
+
+    #information-sections {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    #header-container {
+        padding: 0 20px;
+    }
+}
+
+/* Responsividade para mobile */
+@media (max-width: 768px) {
+    #header-container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    #main-navigation {
+        order: 1;
+        width: 100%;
+    }
+
+    #site-logo {
+        order: 2;
+    }
+
+    #user-name {
+        order: 3;
+    }
+
+    #navigation-links {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .navigation-item a {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+
+    main {
+        padding: 20px 15px;
+    }
+
+    #information-sections {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        margin-bottom: 30px;
+    }
+
+    .section-title {
+        padding: 12px 15px;
+        font-size: 13px;
+    }
+
+    .card-group {
+        padding: 30px 15px;
+    }
+
+    #table-information {
+        border-spacing: 5px;
+    }
+
+    #table-information thead th,
+    #table-information tbody td {
+        padding: 15px 10px;
+        font-size: 12px;
+    }
+}
+
+/* Mobile pequeno */
+@media (max-width: 480px) {
+    #header-container {
+        padding: 15px;
+    }
+
+    main {
+        padding: 15px 10px;
+    }
+
+    .navigation-item a {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+
+    .card-group {
+        padding: 25px 10px;
+    }
+
+    .table-container {
+        margin: 0 -10px;
+    }
+
+    #table-information {
+        min-width: 500px;
+        border-spacing: 4px;
+    }
+
+    #table-information thead th,
+    #table-information tbody td {
+        padding: 12px 8px;
+        font-size: 11px;
+    }
+}
+
+/* Melhorias de acessibilidade */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+.navigation-item a:focus {
+    outline: 2px solid var(--yellow-accent);
+    outline-offset: 2px;
+}

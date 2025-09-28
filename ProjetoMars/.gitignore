@@ -1,0 +1,22 @@
+# node_modules é enorme e não deve ir pro Git
+node_modules/
+
+# arquivos de log
+*.log
+
+# variáveis de ambiente
+.env
+
+# cache do npm
+npm-debug.log*
+
+# arquivos de sistema do VS Code
+.vscode/
+
+# diretório de build
+dist/
+build/
+
+# arquivos do sistema operacional
+.DS_Store
+Thumbs.db

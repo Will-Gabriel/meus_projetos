@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/PageWeb/app/templates/css/reset.css">
+    <link rel="stylesheet" href="/PageWeb/app/templates/css/style_login.css">
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <div id="logo-login">
+            <h1>Login <span>Mars</span></h1>
+        </div>
+    </header>
+    <main>
+        <div id="login-container">
+            <div class="login-description">
+                <p>Realize o login utilizando seu email e senha</p>
+            </div>
+
+            <div id="alert-container">
+                <div id="alert" class="alert"></div>
+            </div>
+
+            <div id="login-form">
+                <form id="form-inputs" action="">
+                    <div class="form-group">
+                        <label for="user-email">Usuário</label>
+                        <input type="email" id="user-email" placeholder="Insira seu email..." minlength="5" required>
+                        <div id="email-error" class="error-message"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="user-password">Senha</label>
+                        <input type="password" id="user-password" placeholder="Insira sua senha..." minlength="5" required>
+                        <div id="password-error" class="error-message"></div>
+                    </div>
+                    <button type="submit" id="login-btn">Entrar</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="/PageWeb/app/templates/js/index-login.js"></script>
+
+</body>
+</html>

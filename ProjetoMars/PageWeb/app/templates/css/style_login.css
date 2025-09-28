@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    --primary-bg: #111111;
+    --secondary-bg: #252525;
+    --accent-color: #fff;
+    --hover-color: #cec9c9;
+    --card-bg: #ffffff;
+    --yellow-accent: #ffff00;
+    --border-radius: 12px;
+    --transition: all 0.3s ease;
+    --shadow: 0 4px 12px #00000033;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--primary-bg);
+    color: var(--accent-color);
+    height: 100vh;
+    min-width: 360px;
+    background: url("/PageWeb/app/templates/img/background-login.webp") no-repeat center center;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+#logo-login {
+    /* flex: 1;
+    text-align: center; */
+    padding: 40px;
+    margin: 20px;
+    font-size: 52px;
+    font-weight: 400;
+}
+
+/* #logo-login span {
+    color: var(--yellow-accent);
+    font-weight: 700;
+} */
+
+main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+}
+
+#login-container {
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    width: 500px;
+    /* min-height: 600px; */
+    border-radius: 10px;
+    background-color: #ffffff;
+    z-index: 0;
+}
+
+.login-description {
+    margin: 20px;
+    background-color: #252525;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#alert-container {
+    width: 100%;
+    height: 20px;
+    color: #ff0000;
+    font-size: 16px;
+}
+
+#login-form {
+    color: #252525;
+    margin: 20px;
+    padding: 40px;
+}
+
+.error-message {
+    /* width: 100px; */
+    padding: 5px;
+    height: 10px;
+    /* min-width: 20px; */
+}
+
+#form-inputs .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    /* padding: 15px; */
+    text-align: left;
+    /* min-width: 40px; */
+}
+
+label {
+    font-size: 16px;
+    padding: 5px 0px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #252525;
+}
+
+button {
+    background-color: #252525;
+    color: #ffffff;
+    width: 150px;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
+}
+button:hover {
+    cursor: pointer;
+    background-color: #111111;
+}
+
+
+.error-message{
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 12px;
+    color: #ff0000;
+}
+
+
+/* Telas muito grandes (acima de 1200px) */
+@media (min-width: 1200px) {
+    #login-container {
+        width: 30%;
+    }
+
+    #logo-login {
+        font-size: 60px;
+        padding: 50px;
+    }
+}
+
+/* Telas grandes (entre 992px e 1199px) */
+@media (max-width: 1199px) and (min-width: 992px) {
+    #login-container {
+        width: 55%;
+    }
+
+    #logo-login {
+        font-size: 52px;
+        padding: 40px;
+    }
+}
+
+/* Telas médias (entre 768px e 991px) */
+@media (max-width: 991px) and (min-width: 768px) {
+    #login-container {
+        width: 65%;
+        padding: 20px;
+    }
+
+    #logo-login {
+        font-size: 40px;
+        padding: 30px;
+    }
+
+    #login-form {
+        padding: 30px;
+    }
+}
+
+/* Telas pequenas (entre 480px e 767px) */
+@media (max-width: 767px) and (min-width: 480px) {
+    #login-container {
+        width: 85%;
+        padding: 15px;
+    }
+
+    #logo-login {
+        font-size: 32px;
+        padding: 20px;
+    }
+
+    #login-form {
+        padding: 20px;
+    }
+}
+
+/* Telas muito pequenas (até 479px) */
+@media (max-width: 479px) and (min-width: 360px) {
+    #login-container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    #logo-login {
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    #login-form {
+        padding: 15px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
