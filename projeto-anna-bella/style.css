@@ -1,0 +1,45 @@
+body {
+    font-size: 16px;
+    font-family: Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #d2d2c1 url('images/fundo.png');
+}
+
+#container {
+    /* border: 1px solid red; */
+    width: 900px;
+    background-attachment: fixed;
+}
+#menu_cabecalho {
+    background: #c5c5b2;
+    /* border: 1px solid red; */
+    padding: 15px;
+}
+#conteudo {
+    background: #e8e8d9;
+    padding: 10px;
+}
+#contato {
+    color: #828271;
+}
+#rodape {
+    text-align: center;
+}
+
+a {
+    color: #4b566a;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px;
+}
+a:hover {
+    color: #335696;
+}
+
+h1 {
+    color: #828271;
+    font-size: 1.2em;
+}
+
+.img_campanhas {
+    border: 10px solid #c3c3ae;
+}

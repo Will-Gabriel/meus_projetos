@@ -1,0 +1,19 @@
+Projeto apenas para fins de estudo.
+
+Esse foi meu primeiro "projeto" utilizando apenas a linguagem de marcação HTML.
+
+Este pequeno projeto foi desenvolvido em HTML utilizando tabelas e formulários,
+proporciona uma experiência informativa e interativa em três
+páginas principais: Home, Contato e Quem Somos.
+
+Home:
+Na página inicial, os visitantes são recebidos com uma pequena visão panorâmica
+da Unes Universidade. 
+
+Contato:
+A página de Contato é projetada com formulários interativos que facilitam
+a comunicação entre a comunidade e a universidade. 
+
+Quem Somos:
+Na página "Quem Somos", o site utiliza tabelas e listas ordenadas para estruturar detalhes sobre
+a história, missão e valores da Unes Universidade.
