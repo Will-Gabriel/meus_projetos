@@ -1,0 +1,198 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    background-color: #F6F4F3;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+}
+.main {
+    display: flex;
+    flex-flow: column;
+    width: 85%;
+}
+.menu {
+    width: 15%;
+    color: #f1f1f1;
+    background-color: #171414;
+    padding: 10px 20px 0px;
+}
+.logo-menu {
+    display: flex;
+    justify-content: center;
+}
+.logo-menu img {
+    width: 100px;
+}
+.menu .links-menu a {
+    display: flex;
+    flex-direction: column;
+    color: #f1f1f1;
+    margin: 20px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+.menu .links-menu a:hover {
+    border-bottom: 2px solid #E1FF30;
+}
+
+
+.header {
+    width: 1020px;
+    height: 200px;
+}
+.content {
+    background-color: #f1f1f1;
+    min-height: 300px;
+    padding: 20px;
+}
+
+
+/* Página home */
+.div-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5px;
+    gap: 5px;
+}
+.card img {
+    border-radius: 8px;
+    width: 300px;
+}
+
+
+/* Formulario e Contatos */
+.div-contact {
+    display: flex;
+    flex-direction: column;
+}
+.form-contact {
+    width: 500px;
+    color: #171414;
+}
+.form-contact input {
+    width: 70%;
+    padding: 10px;
+    border-bottom: 1px solid #171414;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 4px;
+    margin: auto 10px;
+    background-color: #f1f1f1;
+    font-size: 15px;
+}
+.form-contact textarea, label {
+    width: 70%;
+    padding: 10px;
+    margin: auto 10px;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+iframe {
+    border-radius: 8px;
+}
+textarea {
+    border-bottom: 1px solid #171414;
+    font-size: 15px;
+}
+input {
+    all:unset;
+    transition: .1s ease-in-out;
+}
+input, textarea, button {
+    font-family: "Poppins", sans-serif;
+}
+button {
+    width: 35%;
+    padding: 10px;
+    border: 1px solid #171414;
+    border-radius: 4px;
+    margin: auto 10px;
+    background-color: #f1f1f1;
+}
+button:hover {
+    cursor: pointer;
+    color: #F6F4F3;
+    background-color: #171414;
+}
+
+/* Tabelas Atendimento */
+.veterinary-services {
+    margin-bottom: 20px;
+}
+.tables {
+    width: 70%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    margin: 10px;
+    margin-top: 20px;
+}
+table thead th {
+    background-color: #171414;
+    color: #fff;
+    padding: 10px 40px;
+}
+table tbody tr {
+    text-align: center;
+}
+table tbody tr .td-align{
+    text-align: left;
+}
+table tbody tr:nth-child(even) td {
+    background-color: #e4e0e0;
+}
+
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #171414;
+    width: 100%;
+    gap: 10px;
+}
+
+.footer-contact, .footer-links, .footer-social, .footer-atendimento {
+    /* border: 1px solid red; */
+    padding: 20px;
+    font-size: 14px;
+}
+
+.footer-link-menu,
+.footer-social-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-contact,
+.footer-title,
+.footer-atendimento,
+a {
+    color: #F6F4F3;
+    text-decoration: none;
+}
+
+.footer-link-menu,
+.footer-social-menu,
+a {
+    margin-bottom: 10px;
+    border-bottom: 2px solid transparent;
+}
+.footer-link-menu a:hover {
+    border-bottom: 2px solid #E1FF30;
+}
+.footer-social-menu a:hover {
+    border-bottom: 2px solid #E1FF30;
+}
+

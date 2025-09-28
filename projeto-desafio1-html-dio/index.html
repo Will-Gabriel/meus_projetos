@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Página Principal</title>
+</head>
+<body>
+    <header>
+        <h1 id="inicio">Desafio DIO - Formação HTML</h1>
+        <p id="p-inicio">Minhas anotações</p>
+    </header>
+    
+    <div id="main-nav">
+        <h2 id="indice">Índice</h2>
+        <p><small>Caso queira, utilize os índices para navegar. Basta clicar no índice que deseja!</small></p>
+        <nav>
+            <ul>
+                <li><a class="links-nav" href="#estrutura">Estrutura básica do HTML</a></li>
+                <li><a class="links-nav" href="#sobre-tags">O que são Tags</a></li>
+                <li><a class="links-nav" href="#sobre-atributos">O que são Atributos</a></li>
+                <li><a class="links-nav" href="#sobre-textos">O que são textos no HTML</a></li>
+                <li><a class="links-nav" href="#sobre-listas">Sobre Listas</a></li>
+                <li><a class="links-nav" href="#sobre-links">Entendendo links</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="main-content">
+        <div class="div-contents">
+            <div>
+                <h2 id="estrutura" class="format-h2">Estrutura básica do HTML</h2>
+                <p><strong>HTML</strong> (HyperText Markup Language) é a linguagem padrão utilizada para criar a estrutura de páginas da web. Imagine-a como os ossos de uma casa: ela define a base, a organização e a hierarquia do conteúdo.</p>
+            </div>
+            <div>
+                <h3>Componentes essenciais:</h3>
+                <ul>
+                    <li><span>DocType</span>: A primeira linha de um documento HTML declara o tipo de documento. Indica ao navegador qual versão do HTML está sendo utilizada.</li>
+    
+                    <li><span>&lt;html&gt;&lt;/html&gt;</span>: É a tag raiz, englobando todo o conteúdo da página.</li>
+    
+                    <li><span>&lt;head&gt;&lt;/head&gt;</span>: Contém informações sobre a página que não são exibidas diretamente no navegador. Aqui você encontra o título da página, metadados, links para folhas de estilo (CSS) e scripts (JavaScript).</li>
+    
+                    <li><span>&lt;body&gt;&lt;/body&gt;</span>: É onde reside o conteúdo visível da página, como texto, imagens, links, tabelas, etc.</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Exemplo simples:</h3>
+                <pre>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;title&gt;Minha Primeira Página&lt;/title&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;h1&gt;Bem-vindo ao meu site!&lt;/h1&gt;
+                        &lt;p&gt;Este é um parágrafo de exemplo.&lt;/p&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                </pre>
+            </div>
+            <div>
+                <h3>Explicando cada parte:</h3>
+                <ul>
+                    <li><span>&lt;!DOCTYPE html&gt;</span>: Declara que este é um documento HTML5.</li>
+    
+                    <li><span>&lt;title&gt;&lt;/title&gt;</span>: Define o título da página, que aparece na aba do navegador.</li>
+    
+                    <li><span>&lt;h1&gt;&lt;/h1&gt;</span>: Cria um título de nível 1. Existem outros níveis (&lt;h2&gt;, &lt;h3&gt;, etc.) para títulos menos importantes.</li>
+    
+                    <li><span>&lt;p&gt;&lt;/p&gt;</span>: Define um parágrafo.</li>
+                </ul>
+    
+                <p><strong>Em resumo</strong>: O HTML é a base de toda página web, fornecendo a estrutura e organização necessárias para a criação de conteúdo online. Ao entender os conceitos básicos, você estará pronto para dar seus primeiros passos no desenvolvimento web.</p>
+            </div>
+            <a class="links-contents" href="#inicio">Voltar ao início</a>
+        </div>
+
+        <div class="div-contents">
+            <div>
+                <h2 id="sobre-tags" class="format-h2">O que são Tags</h2>
+                <p>As tags HTML são como palavras-chave que informam ao navegador como interpretar e exibir o conteúdo de uma página. Elas delimitam elementos, como títulos, parágrafos, imagens, links, etc., e definem suas características.</p>
+            </div>
+            <div>
+                <h3>Estrutura básica de uma tag:</h3>
+                <pre>
+                    &lt;tag_name&gt;Conteúdo da tag&lt;/tag_name&gt;
+                </pre>
+            </div>
+            <div>
+                <h3>Tipos de Tags e seus usos:</h3>
+                <ul>
+                    <li>
+                        <p><strong>Tags Semânticas:</strong> Definem o significado do conteúdo. Exemplos:</p>
+                        <ul>
+                            <li><span>&lt;h1&gt; a &lt;h6&gt;</span>: Títulos de diferentes níveis de importância.</li>
+    
+                            <li><span>&lt;p&gt;</span>: Parágrafo.</li>
+    
+                            <li><span>&lt;nav&gt;</span>: Seção de navegação</li>
+    
+                            <li><span>&lt;article&gt;</span>: Conteúdo independente (artigo, post).</li>
+    
+                            <li><span>&lt;section&gt;</span>: Seção de conteúdo.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><strong>Tags Estruturais:</strong> Definem a estrutura da página. Exemplos:</p>
+                        <ul>
+                            <li><span>&lt;div&gt;</span>: Divisão genérica para agrupar outros elementos.</li>
+                            <li><span>&lt;span&gt;</span>: Contêiner inline para agrupar elementos em linha.</li>
+                            <li><span>&lt;header&gt;</span>: Cabeçalho da página.</li>
+                            <li><span>&lt;footer&gt;</span>: Rodapé da página.</li></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><strong>Tags para Formatação:</strong> Aplicam estilos básicos ao texto. Exemplos:</p>
+                        <ul>
+                            <li><span>&lt;b&gt; e &lt;strong&gt;</span>: Texto em negrito (sem semântica e com semântica).</li>
+                            <li><span>&lt;i&gt; e &lt;em&gt;</span>: Texto em itálico (sem semântica e com semântica).</li>
+                            <li><span>&lt;ul&gt; e &lt;ol&gt;</span>: Listas não ordenadas e ordenadas.</li>
+                            <li><span>&lt;a&gt;</span>: Link para outra página ou ancoragem na mesma página.</li></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><strong>Tags para Mídia:</strong> Inserem imagens, vídeos e outros tipos de mídia. Exemplos:</p>
+                        <ul>
+                            <li><span>&lt;img&gt;</span>: Imagem.</li>
+                            <li><span>&lt;video&gt;</span>: Vídeo.</li>
+                            <li><span>&lt;audio&gt;</span>: Áudio.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3>Exemplos básicos:</h3>
+                <pre>
+                    &lt;h1&gt;Título Principal&lt;/h1&gt;
+                    &lt;p&gt;Este é um parágrafo.&lt;/p&gt;
+                    &lt;a href="https://www.exemplo.com"&gt;Link para outro site&lt;/a&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;Item 1&lt;/li&gt;
+                        &lt;li&gt;Item 2&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;img src="minha_imagem.jpg" alt="Descrição da imagem"&gt;
+                </pre>
+            </div>
+            <a class="links-contents" href="#inicio">Voltar ao início</a>
+        </div>
+
+        <div class="div-contents">
+            <div>
+                <h2 id="sobre-atributos" class="format-h2">O que são Atributos</h2>
+                <p>Atributos são palavras-chave que você adiciona dentro de uma tag de abertura para fornecer informações adicionais sobre aquele elemento. Eles permitem que você customize a aparência, o comportamento e outras características do elemento.</p>
+            </div>
+            <div>
+                <h3>Sintaxe:</h3>
+                <pre>
+                    &lt;tag_name atributo1="valor1" atributo2="valor2"&gt;Conteúdo&lt;/tag_name&gt;
+                </pre>
+                <ul>
+                    <li><span>atributo</span>: Nome do atributo.</li>
+                    <li><span>valor</span>: Valor atribuído ao atributo, sempre entre aspas.</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Funções dos Atributos:</h3>
+                <ul>
+                    <li><span>Especificar propriedades</span>: Definir o tamanho, a cor, a posição, etc., de um elemento.</li>
+                    <li><span>Fornecer informações adicionais</span>: Dar mais contexto sobre o elemento, como o endereço de um link ou o tipo de um input.</li>
+                    <li><span>Controlar o comportamento</span>: Alterar a forma como um elemento interage com o usuário ou com outras partes da página.</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Exemplos Comuns de Atributos:</h3>
+                <ul>
+                    <li><span>id</span>: Atribui um identificador único a um elemento.</li>
+                    <li><span>class</span>: Atribui uma ou mais classes a um elemento, permitindo aplicar estilos CSS.</li>
+                    <li><span>src</span>: Especifica o endereço de um recurso externo, como uma imagem ou um arquivo de áudio.</li>
+                    <li><span>href</span>: Define o destino de um link.</li>
+                    <li><span>alt</span>: Fornece um texto alternativo para uma imagem, utilizado por leitores de tela.</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Exemplo no HTML:</h3>
+                <pre>
+                    &lt;img src="minha_imagem.jpg" alt="Uma bela paisagem"&gt;
+                    &lt;a href="https://www.exemplo.com" target="_blank"&gt;Visite nosso site&lt;/a&gt;
+                    &lt;input type="text" placeholder="Digite seu nome"&gt;
+                </pre>
+            </div>
+            <div>
+                <h3>Atributos Globais e Específicos:</h3>
+                <ul>
+                    <li><span>Atributos globais</span>: Podem ser usados em quase todos os elementos, como id, class, title, style, etc.</li>
+                    <li><span>Atributos específicos</span>: São exclusivos de determinados elementos, como src para a tag &lt;img&gt; ou type para a tag &lt;input&gt;.</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Por que usar atributos?</h3>
+                <ul>
+                    <li><span>Personalização</span>: Permite criar elementos únicos e personalizados.</li>
+                    <li><span>Interatividade</span>: Cria elementos que respondem a interações do usuário.</li>
+                    <li><span>Acessibilidade</span>: Melhora a acessibilidade da página para pessoas com deficiência.</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Atributos e CSS</h3>
+                <p>Os atributos id e class são especialmente importantes para aplicar estilos CSS aos elementos. Ao atribuir uma classe a um elemento, você pode definir um conjunto de regras CSS que se aplicam a todos os elementos com aquela classe.</p>
+            </div>
+            <div>
+                <h3>Exemplos no HTML e CSS:</h3>
+                <pre>
+                    HTML
+                    &lt;h1 class="titulo"&gt;Título da Página&lt;/h1&gt;
+                    Use code with caution.
+                    
+                    CSS
+                    .titulo {
+                      color: blue;
+                      font-size: 36px;
+                    }
+                </pre>
+            </div>
+            <a class="links-contents" href="#inicio">Voltar ao início</a>
+        </div>
+
+        <div class="div-contents">
+            <div>
+                <h2 id="sobre-textos" class="format-h2">O que são textos no HTML</h2>
+                <p>O texto é um dos elementos mais básicos e importantes de qualquer página web, e o HTML oferece diversas tags e atributos para formatá-lo e organizá-lo de forma eficiente.</p>
+            </div>
+            <div>
+                <h3>Estrutura Básica de Texto em HTML:</h3>
+                <ul>
+                    <li>
+                        <p><strong>Tags de parágrafo</strong>:</p>
+                        <ul>
+                            <li><span>&lt;p&gt;</span>: Define um parágrafo. É a tag mais comum para organizar o texto em blocos.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><strong>Quebras de linha</strong>:</p>
+                        <ul>
+                            <li><span>&lt;br&gt;</span>: Insere uma quebra de linha dentro de um parágrafo.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><strong>Formatação básica:</strong></p>
+                        <ul>
+                            <li><span>&lt;b&gt;</span>: Texto em negrito.</li>
+                            <li><span>&lt;i&gt;</span>: Texto em itálico</li>
+                            <li><span>&lt;u&gt;</span>: Texto sublinhado.</li>
+                            <li><span>&lt;mark&gt;</span>: Texto marcado (geralmente com fundo amarelo).</li>
+                            <li><span>&lt;del&gt;</span>: Texto deletado (geralmente riscado).</li>
+                            <li><span>&lt;ins&gt;</span>: Texto inserido (geralmente sublinhado).</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3>Organizando o Texto:</h3>
+                <ul>
+                    <li>
+                        <p><strong>Cabeçalhos:</strong></p>
+                        <ul>
+                            <li><span>&lt;h1&gt; a &lt;h6&gt;</span>: Definem títulos de diferentes níveis de importância.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><strong>Listas:</strong></p>
+                        <ul>
+                            <li><span>&lt;ul&gt;</span>: Lista não ordenada (com marcadores).</li>
+                            <li><span>&lt;ol&gt;</span>: Lista ordenada (numerada).</li>
+                            <li><span>&lt;li&gt;</span>: Item de uma lista.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><strong>Citações:</strong></p>
+                        <ul>
+                            <li><span>&lt;q&gt;</span>: Citações curtas.</li>
+                            <li><span>&lt;blockquote&gt;&lt;/blockquote&gt;</span>: Citações longas, geralmente com recuo.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3>Atributos Úteis para Texto:</h3>
+                <ul>
+                    <li><span>style</span>: Aplica estilos CSS diretamente ao elemento.</li>
+                    <li><span>class</span>: Atribui uma classe ao elemento para aplicar estilos através de CSS.</li>
+                    <li><span>title</span>: Adiciona um texto de dica que aparece quando o mouse passa sobre o elemento.</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Exemplo prático:</h3>
+                <pre>
+                    &lt;h1&gt;Título Principal&lt;/h1&gt;
+                    &lt;p&gt;Este é um parágrafo de exemplo. &lt;b&gt;Este texto está em negrito.&lt;/b&gt;&lt;/p&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;Item 1&lt;/li&gt;
+                        &lt;li&gt;Item 2&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;p&gt;Aqui temos uma citação: &lt;q&gt;A prática leva à perfeição.&lt;/q&gt;&lt;/p&gt;
+                </pre>
+            </div>
+            <div>
+                <h3>Por que a Formatação de Texto é Importante?</h3>
+                <ul>
+                    <li><span>Legibilidade</span>: Torna o conteúdo mais fácil de ler e entender.</li>
+                    <li><span>Hierarquia</span>: Cria uma hierarquia visual para o conteúdo, destacando os pontos mais importantes.</li>
+                    <li><span>Acessibilidade</span>: Facilita a leitura por pessoas com deficiência visual, utilizando leitores de tela.</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Formatação Avançada com CSS</h3>
+                <p>Embora o HTML ofereça algumas opções básicas de formatação, o CSS (Cascading Style Sheets) é a linguagem ideal para criar estilos mais complexos e personalizados para seus textos. Com CSS, você pode controlar a cor, o tamanho da fonte, o espaçamento entre linhas, a alinhamento, e muito mais.</p>
+            </div>
+            <a class="links-contents" href="#inicio">Voltar ao início</a>
+        </div>
+
+        <div class="div-contents">
+            <div>
+                <h2 id="sobre-listas" class="format-h2">Listas Ordenadas e Não Ordenadas</h2>
+                <p>Listas são elementos essenciais em HTML para apresentar informações de forma organizada e hierárquica. Elas são especialmente úteis para exibir conjuntos de itens relacionados, como instruções, listas de produtos, etc.</p>
+            </div>
+            <div>
+                <h3>Existem dois tipos principais de listas em HTML:</h3>
+                <ul>
+                    <li>Listas não ordenadas <span>&lt;ul&gt;</span>: Utilizadas quando a ordem dos itens não é relevante. Os itens são marcados com marcadores (bullets) por padrão.</li>
+                    <li>Listas ordenadas <span>&lt;ol&gt;</span>: Utilizadas quando a ordem dos itens é importante. Os itens são numerados.</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Estrutura Básica:</h3>
+                <pre>
+                    &lt;ul&gt;
+                        &lt;li&gt;Item 1&lt;/li&gt;
+                        &lt;li&gt;Item 2&lt;/li&gt;
+                        &lt;li&gt;Item 3&lt;/li&gt;
+                    &lt;/ul&gt;
+                      
+                    &lt;ol&gt;
+                        &lt;li&gt;Primeiro item&lt;/li&gt;
+                        &lt;li&gt;Segundo item&lt;/li&gt;
+                        &lt;li&gt;Terceiro item&lt;/li&gt;
+                    &lt;/ol&gt;
+                </pre>
+
+                <ul>
+                    <li><span>&lt;ul&gt;</span>: Define uma lista não ordenada.</li>
+                    <li><span>&lt;ol&gt;</span>: Define uma lista ordenada.</li>
+                    <li><span>&lt;li&gt;</span>: Define um item dentro da lista.</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Personalizando Listas:</h3>
+                <ul>
+                    <li><span>Tipos de marcadores</span>: Você pode personalizar o tipo de marcador em listas não ordenadas usando CSS.</li>
+                    <li><span>Tipos de numeração</span>: Em listas ordenadas, você pode alterar o tipo de numeração (arábicos, romanos, letras, etc.) usando CSS.</li>
+                    <li><span>Níveis de aninhamento</span>: Crie listas dentro de listas para organizar informações mais complexas.</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Exemplo com Níveis de Aninhamento:</h3>
+                <pre>
+                    &lt;ul&gt;
+                        &lt;li&gt;Frutas:
+                            &lt;ul&gt;
+                                &lt;li&gt;Abacate&lt;/li&gt;
+                                &lt;li&gt;Abacaxi&lt;/li&gt;
+                            &lt;/ul&gt
+                        &lt;/li&gt;
+                        &lt;li&gt;Legumes:
+                            &lt;ul&gt;
+                                &lt;li&gt;Abóbora&lt;/li&gt;
+                                &lt;li&gt;Abobrinha&lt;/li&gt;
+                            &lt;/ul&gt                        
+                        &lt;/li&gt;
+                        &lt;li&gt;Grãos:
+                            &lt;ul&gt;
+                                &lt;li&gt;Arroz&lt;/li&gt;
+                                &lt;li&gt;Feijão&lt;/li&gt;
+                                &lt;li&gt;Milho&lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                </pre>
+            </div>
+            <div>
+                <h3>Por que Usar Listas?</h3>
+                <ul>
+                    <li><span>Organização: </span>: Melhora a legibilidade e a compreensão do conteúdo.</li>
+                    <li><span>Hierarquia</span>: Permite criar estruturas hierárquicas para informações relacionadas.</li>
+                    <li><span>Acessibilidade</span>: Facilita a navegação por leitores de tela.</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Atributos Úteis:</h3>
+                <ul>
+                    <li><span>type</span>: (Apenas para &lt;ol&gt;) Define o tipo de numeração (A, a, I, i, 1).</li>
+                    <li><span>start</span>: (Apenas para &lt;ol&gt;) Define o número inicial da contagem.</li>
+                </ul>
+            </div>
+            <a class="links-contents" href="#inicio">Voltar ao início</a>
+        </div>
+
+        <div class="div-contents">
+            <div>
+                <h2 id="sobre-links" class="format-h2">Entendendo links</h2>
+                <p>Os links permitem que os usuários naveguem de uma página para outra, tornando a internet uma rede interconectada de informações.</p>
+            </div>
+            <div>
+                <h3>A Tag <span>&lt;a&gt;</span>: A Base dos Links</h3>
+                <p>A tag &lt;a&gt; (anchor) é a responsável por criar links em HTML. O atributo mais importante dessa tag é o href, que especifica o endereço (URL) para o qual o link irá direcionar.</p>
+            </div>
+            <div>
+                <h3>Sintaxe básica:</h3>
+                <pre>
+                    &lt;a href="url"&gt;Texto do link&lt;;a&gt;
+                </pre>
+                <ul>
+                    <li><span>href</span>: O endereço do destino.</li>
+                    <li><span>Texto do link</span>: O texto visível que o usuário clica.</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Exemplo:</h3>
+                <pre>
+                    &lt;a href="https://www.google.com"&gt;Visite o Google&lt;;a&gt;
+                </pre>
+            </div>
+            <div>
+                <h3>Tipos de Links:</h3>
+                <ul>
+                    <li><span>Links internos</span>: Conectam a página atual a outras páginas dentro do mesmo site.</li>
+                    <li><span>Links externos</span>: Conectam a página atual a páginas em outros sites.</li>
+                    <li><span>Links para âncoras</span>: Conectam a página atual a uma seção específica da mesma página.</li>
+                    <li><span>Links para arquivos</span>: Conectam a página atual a arquivos para download (PDF, documentos, etc.).</li>
+                    <li><span>Links para e-mail</span>: Criam um link que, quando clicado, abre um programa de e-mail para enviar uma mensagem.</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Atributos Úteis para Links:</h3>
+                <ul>
+                    <li><span>target</span>: Define onde o link será aberto.</li>
+                    <li><span>_blank</span>: Abre em uma nova aba.</li>
+                    <li><span>_self</span>: Abre na mesma aba (padrão).</li>
+                    <li><span>_parent</span>: Abre no frame pai.</li>
+                    <li><span>_top</span>: Abre na janela principal.</li>
+                    <li><span>title</span>: Adiciona um texto de dica que aparece quando o mouse passa sobre o link.</li>
+                    <li><span>rel</span>: Especifica a relação entre a página atual e o recurso vinculado (usado para SEO e meta tags).</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Exemplo com atributos:</h3>
+                <pre>
+                    &lt;a href="contato.html" target="_blank" title="Entre em contato conosco"&gt;Contato&lt;/a&gt;
+                </pre>
+            </div>
+            <div>
+                <h3>Por que os Links são Importantes?</h3>
+                <ul>
+                    <li><span>Navegação</span>: Permitem que os usuários naveguem entre as páginas de um site.</li>
+                    <li><span>Interconexão</span>: Conectam sites diferentes, formando a World Wide Web.</li>
+                    <li><span>SEO</span>: Ajudam os motores de busca a encontrar e indexar seu conteúdo.</li>
+                    <li><span>Experiência do usuário</span>: Facilitam a navegação e a descoberta de informações.</li>
+                </ul>                
+            </div>
+            <div>
+                <h3>Links e Acessibilidade</h3>
+                <ul>
+                    <li><span>Texto alternativo</span>: Utilize o atributo alt para fornecer um texto alternativo para imagens que funcionam como links, tornando o site mais acessível para pessoas com deficiência visual.</li>
+                    <li><span>Foco do teclado</span>: Certifique-se que os links sejam navegáveis pelo teclado, para usuários que não utilizam o mouse.</li>
+                </ul>
+            </div>
+            <a class="links-contents" href="#inicio">Voltar ao início</a>
+        </div>
+    </div>
+</body>
+</html>
